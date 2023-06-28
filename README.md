@@ -31,19 +31,26 @@ git clone https://github.com/kaaaichi/setup_neovim.git
 cd setup_neovim
 ```
 
+### packer.nvimのインストール
+
+```bash
+# opt ディレクトリに packer.nvim をクローン
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
 ### 設定作業
 
 ファイルをコピーする
 
 ```bash
-cp init.lua ~/.config/nvim/
-cp -r lua ~/.config/nvim/
+mkdir -p ~/.config/nvim/
+cp -r lua_files/* ~/.config/nvim/
 ```
 
 プラグインをインストールする
 
 ```bash
-nvim ~/.config/nvim/plugin.lua
+nvim ~/.config/nvim/lua/plugin.lua
 
 # nvim後
 :PackerInstall
