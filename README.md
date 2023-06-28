@@ -8,8 +8,9 @@ kaaichiが使用しているneovimの設定を管理するリポジトリです�
 
 brewでのインストール方法を記載します。
 
-### neovimのインストール
+### neovimのインストール(for Mac)
 
+Linux用のインストール手順は実際にインストールした後に記載する予定。
 
 ```bash
 # for Mac
@@ -17,11 +18,6 @@ brew update
 brew install neovim
 ```
 
-```bash
-# for Ubuntu
-sudo apt update
-sudo apt install neovim
-```
 
 ### リポジトリのクローン
 リポジトリをクローンする。
@@ -63,3 +59,4 @@ nvim ~/.config/nvim/lua/plugin.lua
 ```bash
 nvim test.md
 ```
+
