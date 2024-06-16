@@ -88,4 +88,11 @@ require("packer").startup(function()
       { "thinca/vim-prettyprint" },
     },
   }
+
+  -- カーソル移動用のプラグイン
+  use 'easymotion/vim-easymotion'
+
+  -- ファイラー
+  use 'lambdalisue/fern.vim'
+  vim.g['fern#default_hidden'] = 1
 end)

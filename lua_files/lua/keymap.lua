@@ -23,3 +23,10 @@ vim.api.nvim_set_keymap('n', '<S-h>', ':<C-u>normal! 10h<CR>', { noremap = true,
 vim.api.nvim_set_keymap('n', '<S-j>', ':<C-u>normal! 10j<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-k>', ':<C-u>normal! 10k<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-l>', ':<C-u>normal! 10l<CR>', { noremap = true, silent = true })
+
+-- <leader>をスペースキーに設定
+vim.g.mapleader = ' '
+
+-- fern起動をCtrl-fに設定
+vim.api.nvim_set_keymap('n', '<C-n>', ':Fern . -reveal=% -drawer -toggle -width=40<CR>', { noremap = true, silent = true })
+vim.g['fern#renderer'] = 'nerdfont'
