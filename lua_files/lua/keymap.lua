@@ -23,6 +23,10 @@ vim.api.nvim_set_keymap('n', '<S-h>', ':<C-u>normal! 10h<CR>', { noremap = true,
 vim.api.nvim_set_keymap('n', '<S-j>', ':<C-u>normal! 10j<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-k>', ':<C-u>normal! 10k<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-l>', ':<C-u>normal! 10l<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<S-h>', ':<C-u>normal! 10h<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<S-j>', ':<C-u>normal! 10j<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<S-k>', ':<C-u>normal! 10k<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<S-l>', ':<C-u>normal! 10l<CR>', { noremap = true, silent = true })
 
 -- <leader>をスペースキーに設定
 vim.g.mapleader = ' '
